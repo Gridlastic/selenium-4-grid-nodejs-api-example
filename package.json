@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run testLinux; npm run testWindows;",
+    "testLinux": "./node_modules/.bin/mocha  test/node-api-test.js conf/config_linux.js",
+    "testWindows": "./node_modules/.bin/mocha test/node-api-test.js conf/config_win10.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.1.1",
+    "@babel/cli": "^7.0.0",
+    "superagent": "^5.3.0",
+    "mocha": "latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
